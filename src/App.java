@@ -2,6 +2,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("===========Operadores en Java");
         operadoresAritmeticos();
+        operadoresCombinados();
     }
 
     public static void operadoresAritmeticos() {
@@ -18,6 +19,21 @@ public class App {
         System.out.println("Operador de resta -: " + (numeroA - numeroB));
         System.out.println("Operador de incremento ++ :" + (++numeroA));
         System.out.println("Operador de decremento -- : " + (--numeroB));
-        System.out.println("Operador de Menos Unario - :"+(-(numeroA + numeroB)));
+        System.out.println("Operador de Menos Unario - :" + (-(numeroA + numeroB)));
+    }
+
+    public static void operadoresCombinados() {
+        System.out.println("===========Operadores Combinados===========");
+        // variables
+        int numeroA, numeroB;
+        numeroA = 6;
+        numeroB = 8;
+
+        System.out.println("Operador += :" + (numeroA += numeroB));
+        System.out.println("Operador -= :" + (numeroA -= numeroB));
+        System.out.println("Operador *= :" + (numeroA *= numeroB));
+        System.out.println("Operador /= :" + (numeroA /= numeroB));
+        System.out.println("Operador  %= :" + (numeroA %= numeroB));
+
     }
 }
