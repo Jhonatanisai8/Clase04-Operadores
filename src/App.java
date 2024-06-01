@@ -1,8 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("===========Operadores en Java");
-        operadoresAritmeticos();
-        operadoresCombinados();
+
+        operadorTernario();
     }
 
     public static void operadoresAritmeticos() {
@@ -35,5 +35,32 @@ public class App {
         System.out.println("Operador /= :" + (numeroA /= numeroB));
         System.out.println("Operador  %= :" + (numeroA %= numeroB));
 
+    }
+
+    public static void operadoresIncrementoDecremento() {
+
+        System.out.println("===========Operadores de incremento y decremento===========");
+        // variables
+        int x, y;
+        x = 7;
+        y = 5;
+
+        x++; // post incremento
+        x--; // post decremento
+
+        ++x; // pre incremento
+        --y; // post decremento
+    }
+
+    public static void operadorTernario() {
+        System.out.println("===========Operador Ternario===========");
+        int numeroA = 5 > 3 ? 1 : 2; 
+        System.out.println(numeroA);
+
+        int edad = 18;
+        System.out.println((edad >= 18) ? "Es mayor de edad":"es menor de edad");
+
+        int numero = 6;
+        System.out.println((numero % 2 == 0) ? "Es par":"Es impar");
     }
 }
