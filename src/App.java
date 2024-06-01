@@ -1,8 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("===========Operadores en Java");
-
-        operadorTernario();
+        operadoresRelacionales();
     }
 
     public static void operadoresAritmeticos() {
@@ -54,13 +53,29 @@ public class App {
 
     public static void operadorTernario() {
         System.out.println("===========Operador Ternario===========");
-        int numeroA = 5 > 3 ? 1 : 2; 
+        int numeroA = 5 > 3 ? 1 : 2;
         System.out.println(numeroA);
 
         int edad = 18;
-        System.out.println((edad >= 18) ? "Es mayor de edad":"es menor de edad");
+        System.out.println((edad >= 18) ? "Es mayor de edad" : "es menor de edad");
 
         int numero = 6;
-        System.out.println((numero % 2 == 0) ? "Es par":"Es impar");
+        System.out.println((numero % 2 == 0) ? "Es par" : "Es impar");
+    }
+
+    public static void operadoresRelacionales() {
+        System.out.println("===========Operadores Relacionales===========");
+
+        int x, y;
+        x = 5;
+        y = 6;
+
+        System.out.println("Operador (>) : " + (x > y));
+        System.out.println("Operador (>=) : " + (x >= y));
+        System.out.println("Operador (<) : " + (x < y));
+        System.out.println("Operador (<=) : " + (x <= y));
+        System.out.println("Operador (==) : " + (x == y));
+        System.out.println("Operador (!=) : " + (x != y));
+
     }
 }
